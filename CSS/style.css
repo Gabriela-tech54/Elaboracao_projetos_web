@@ -1,0 +1,105 @@
+/*ESTILO DE TODAS AS TELAS*/
+
+
+/* estilo de cabeçalho*/
+
+.header{
+background-color: #701C22; /* cor de fundo*/
+padding: 10px 20px; /*tamanho da área*/
+align-items: center; /* alinhar ao centro*/
+display: flex; /*redimensionar*/
+justify-content: space-between; 
+/*colocar os espaços lado a lado*/
+}
+/*configurando a logo do site*/
+.logo{
+    display:flex;
+    align-items: center;
+    color: white;
+    font-size: 16px; /* tamanho da fonte do texto*/
+    font-weight: bold; /*texto em negrito*/
+
+}
+.logo img{ /* dimensões da imagem*/
+width: 60px; /*tamanho*/
+margin-right: 10px; /*margens*/
+}
+
+/*Configuração da barra de pesquisa*/
+
+.search-box{
+    flex: 1;
+    max-width: 550px; /*largura máxima*/
+    margin: 0 20px; /*margens da caixa*/
+    border: none ; /**/
+    border-radius: 15px; /*largura da borda*/
+    font-size: 16px; /*tamanho do texto*/
+    position: relative; /*posição*/
+}
+.search-box input{ /*configuração da parte de dentro*/
+    width: 100%; /*preencher toda área*/
+    padding: 10px 40px 10px 15px; /*definindo o espaço cima, direita,baixo, esquerda*/
+    border: none; /*borda da caixa*/
+    border-radius: 20px; /*expressura da borda*/
+    font-size: 16px; /*tamanho da fonte do texto*/
+}
+
+/*Configurando os icones do menu superior*/
+
+.icons{
+    display: flex; /*os icones ficam flexiveis a mudança de tela*/
+    gap: 15px; /*espaços entre os icones*/
+    align-items: center; /*centralizar os itens no meio do menu*/
+}
+
+.icons img{ /*configurando as imagem dos icones*/
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/*Configurações para rodapé*/
+
+.footer{
+    Background-color: #701C22; /*cor de fundo*/
+    padding: 15px 40px 15px 40px; /*dimensão*/
+    color:white; /*cor de texto*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte dos textos*/
+
+}
+
+.footer-esquerdo{
+    font-weight: bold; /*colocando o texto em negrito*/
+    margin: 0;
+}
+
+.footer-direito{
+    text-align: right; /*Texto alinhado á direita*/
+    margin: 0 0 8px 0;
+}
+
+.icons-sociais{ /*configurando a área onde fica os icones das redes sociais*/
+    display: flex; 
+    gap: 20px; /*distancia entre eles*/
+    justify-content: flex-end;
+}
+
+.icons-sociais img{
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s; /*animação suave ao passar o mouse em cima*/
+    
+}
+
+/*Configurações de tela*/
+
+html, body{
+    height: 100%; /*ocupar 100% da altura da tela*/
+    margin: 0; /* remover margens padrão*/
+    display: flex;
+    flex-direction: column; /*organizar em colunas*/
+}
+
+main{
+    flex: 1;/*mandar o rodape para baixo*/
+}
