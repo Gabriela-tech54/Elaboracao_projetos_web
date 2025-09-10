@@ -103,3 +103,862 @@ html, body{
 main{
     flex: 1;/*mandar o rodape para baixo*/
 }
+
+
+
+
+
+
+/* ============================= */
+/* Inicio Tela de Cadastro */
+/* ============================= */
+
+/* Cor vinho personalizada */
+.bg-custom {
+  background-color: #701C22;
+}
+
+/* Logo do menu */
+.logo-menu {
+  width: 100px;
+  height: auto;
+}
+
+/* Card de cadastro */
+.cadastro-card {
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Botão Mostrar/Ocultar Senha */
+.toggle-password {
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .logo-menu {
+    width: 80px;
+  }
+  .cadastro-card {
+    max-width: 100%;
+  }
+}
+/* ============================= */
+/* Fim Tela de Cadastro */
+/* ============================= */
+
+
+
+
+
+/* =========================================================
+   INÍCIO - ESTILOS DA TELA DE LOGIN
+   ========================================================= */
+
+/* Cor do fundo ao redor da página (o quadro escuro da sua imagem) */
+body {
+  background-color: #1f1f1f;
+}
+
+/* Coluna vinho (direita) */
+.bg-vinho {
+  background-color: #701C22; /* vinho */
+}
+
+/* Logo direita */
+.logo-right {
+  max-width: 160px;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Link cadastre-se no topo direito da coluna vinho */
+.cadastro-link {
+  color: #f8f8f8;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.cadastro-link:hover {
+  text-decoration: underline;
+}
+
+/* Card do formulário (marrom claro) */
+.login-card {
+  background-color: #c49a6c; /* marrom claro visto na imagem */
+  border-radius: 8px;
+  width: 320px;            /* largura fixa para consistência com a imagem */
+}
+
+/* Inputs internos com fundo cinza claro */
+.input-light {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 6px;
+  height: 38px;
+  padding: 6px 10px;
+}
+
+/* Estilo do botão Entrar (pequeno, vinho/escuro com texto branco) */
+.btn-login {
+  background-color: #701C22;
+  color: #fff;
+  border: none;
+  padding: 6px 28px;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: none;
+}
+.btn-login:hover {
+  background-color: #5a1419;
+}
+  
+/* Botão/link Esqueci minha senha */
+.btn-forgot {
+  display: inline-block;
+  color: #701C22;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-forgot:hover {
+  text-decoration: underline;
+  color: #5a1419; /* tom mais escuro no hover */
+}
+
+/* Responsividade: empilha as colunas em telas pequenas */
+@media (max-width: 767.98px) {
+  /* Coluna direita fica acima (ou abaixo) conforme sua preferência; aqui elas ficarão empilhadas */
+  .col-md-9,
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Ajuste do card para telas pequenas: ocupar largura maior */
+  .login-card {
+    width: 90%;
+  }
+
+  .logo-right {
+    max-width: 180px;
+  }
+}
+
+/* =========================================================
+   FIM - ESTILOS DA TELA DE LOGIN
+   ========================================================= */
+
+
+
+
+
+
+  /* Inicio do Estilo da Tela de Detalhes do Produto -----------------------------------------*/
+
+/* Navbar personalizada */
+.bg-custom {
+  background-color: #701C22;
+}
+
+.logo-menu {
+  max-height: 40px;
+}
+
+/* Imagens do produto */
+.produto-img {
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.thumb-img {
+  max-width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumb-img:hover {
+  transform: scale(1.1);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #701C22;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #8c2a31;
+}
+
+/* Produtos relacionados */
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .produto-img {
+    max-height: 250px;
+  }
+  .thumb-img {
+    max-width: 80px;
+  }
+}
+
+/* Fim do Estilo da Tela de Detalhes do Produto -----------------------------------------*/
+
+
+
+
+
+/* Inicio do Estilo da Tela de Carrinho -----------------------------------------*/
+
+/* Navbar vinho */
+.bg-custom {
+  background-color: #701C22;
+}
+
+/* Logo no menu */
+.logo-navbar {
+  max-height: 40px;
+}
+
+/* Imagens do carrinho */
+.cart-img {
+  max-width: 80px;
+  border-radius: 6px;
+}
+
+/* Botões personalizados */
+.btn-danger {
+  background-color: #701C22;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #8c2a31;
+}
+
+.btn-success {
+  background-color: #2e7d32;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #1b5e20;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-img {
+    max-width: 100px;
+  }
+
+  .logo-navbar {
+    max-height: 30px;
+  }
+}
+
+/* Fim do Estilo da Tela de Carrinho -----------------------------------------*/
+
+
+
+
+
+/* ============================= */
+/* Tela de cadastro de produtos */
+/* ============================= */
+
+/* Cor personalizada do menu e rodapé */
+.bg-custom {
+  background-color: #6b0f1a; /* vinho */
+}
+
+/* Logo menor que o título */
+.logo-menu {
+  height: 40px; /* menor que o texto h2 */
+}
+
+/* Card arredondado */
+.card {
+  border-radius: 12px;
+}
+
+/* Botão salvar (vermelho vinho) */
+.btn-danger {
+  background-color: #6b0f1a;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #520b13;
+}
+
+/* Botão cancelar (cinza) */
+.btn-secondary {
+  background-color: #bfbfbf;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #9e9e9e;
+}
+
+/* Rodapé */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo-menu {
+    height: 24px;
+  }
+}
+
+/* ============================= */
+/* Fim da Tela de cadastro de produtos */
+/* ============================= */
+
+
+
+
+
+/* ============================= */
+/* Inicio da Tela de Perfil */
+/* ============================= */
+
+/* Cor personalizada do menu e rodapé */
+.bg-custom {
+  background-color: #6b0f1a; /* vinho */
+}
+
+/* Logo no menu */
+.logo-menu {
+  height: 28px;
+}
+
+/* Avatar */
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Link mudar senha */
+.mudar-senha {
+  font-size: 0.9rem;
+  color: #c0392b;
+  text-decoration: none;
+}
+.mudar-senha:hover {
+  text-decoration: underline;
+}
+
+/* Botões de opções */
+.btn-option {
+  background-color: #d9d9d9;
+  border: none;
+  text-align: left;
+  font-weight: 500;
+}
+.btn-option:hover {
+  background-color: #bfbfbf;
+}
+
+/* Rodapé */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .avatar-img {
+    width: 80px;
+    height: 80px;
+  }
+  .logo-menu {
+    height: 24px;
+  }
+}
+
+/* ============================= */
+/* Fim da Tela de Perfil */
+/* ============================= */
+
+
+
+
+
+/* =================== Inicio da tela de frete/pagamento =================== */
+.bg-custom {
+  background-color: #6b0f1a; /* vinho */
+}
+
+.logo-menu {
+  height: 28px;
+}
+
+/* =================== PROGRESSO DE COMPRA =================== */
+.progress-steps .step {
+  font-weight: 500;
+  color: #666;
+}
+.progress-steps .step.active {
+  font-weight: bold;
+  color: #6b0f1a;
+}
+
+/* =================== ITENS DO CARRINHO =================== */
+.cart-item {
+  background-color: #e9e9e9;
+  border-radius: 8px;
+}
+.cart-img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* =================== BOTÃO FINALIZAR =================== */
+.btn-danger {
+  background-color: #6b0f1a;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #520b13;
+}
+
+/* =================== RODAPÉ =================== */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* =================== RESPONSIVIDADE =================== */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+/* =================== Fim da tela de frete/pagamento =================== */
+
+
+
+
+
+
+/* =========================================================
+   INÍCIO - ESTILOS DA TELA HOME DO LOJISTA
+   ========================================================= */
+
+/* ---------- MENU SUPERIOR ---------- */
+.bg-custom {
+  background-color: #6b0f1a; /* Cor vinho padrão */
+}
+.logo-menu {
+  height: 28px; /* Logo no menu superior */
+}
+
+/* ---------- LOGO CENTRAL ---------- */
+.logo-principal {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---------- GRID DE OPÇÕES ---------- */
+.option-card {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.option-card:hover {
+  background-color: #cccccc;
+  transform: translateY(-3px);
+}
+
+/* ---------- BOTÃO "VER OS PRODUTOS" ---------- */
+.btn-danger {
+  background-color: #6b0f1a;
+  border: none;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.btn-danger:hover {
+  background-color: #520b13;
+}
+
+/* ---------- RODAPÉ ---------- */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  .option-card {
+    min-height: 120px;
+    padding: 20px;
+  }
+  .logo-principal {
+    max-width: 100px;
+  }
+}
+
+/* =========================================================
+   FIM - ESTILOS DA TELA HOME DO LOJISTA
+   ========================================================= */
+
+
+/* =========================================================
+   INÍCIO - ESTILOS DA TELA DE BANNERS
+   ========================================================= */
+
+/* ---------- MENU SUPERIOR ---------- */
+.bg-custom {
+  background-color: #6b0f1a; /* Cor vinho padrão */
+}
+.logo-menu {
+  width: 50px; /* Logo no menu superior */
+  height: 80px;
+}
+
+/* ---------- ÁREA DE UPLOAD ---------- */
+.upload-box {
+  background-color: #e9e9e9;
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.upload-box:hover {
+  background-color: #d6d6d6;
+}
+
+/* ---------- BOTÃO ADICIONAR BANNER ---------- */
+.btn-danger {
+  background-color: #6b0f1a;
+  border: none;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.btn-danger:hover {
+  background-color: #520b13;
+}
+
+/* ---------- BOTÕES PROMOÇÃO SIM/NÃO ---------- */
+.btn-outline-danger {
+  border-color: #6b0f1a;
+  color: #6b0f1a;
+}
+.btn-outline-danger:hover,
+.btn-check:checked + .btn-outline-danger {
+  background-color: #6b0f1a;
+  color: #fff;
+  border-color: #6b0f1a;
+}
+.btn-outline-secondary:hover,
+.btn-check:checked + .btn-outline-secondary {
+  background-color: #555;
+  color: #fff;
+  border-color: #555;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  .upload-box {
+    padding: 30px 10px;
+  }
+  .logo-menu {
+    height: 32px;
+  }
+}
+
+/* =========================================================
+   FIM - ESTILOS DA TELA DE BANNERS
+   ========================================================= */
+
+
+
+
+
+   /* =========================================================
+   INÍCIO - ESTILOS DA TELA DE SUPORTE ONLINE
+   ========================================================= */
+
+/* ---------- TOPO ---------- */
+.bg-custom {
+  background-color: #6b0f1a; /* Cor vinho padrão */
+}
+
+/* ---------- LOGO ---------- */
+.logo-suporte {
+  height: 80px;
+  width: auto;
+  opacity: 0.9;
+}
+
+/* ---------- CHAT BOX ---------- */
+.chat-box {
+  background-color: #f8f8f8;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* ---------- AVATAR ---------- */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+/* ---------- BOLHAS DE MENSAGEM ---------- */
+.bg-light {
+  background-color: #e9ecef !important;
+}
+.bg-secondary {
+  background-color: #6b0f1a !important; /* bolha vinho para atendente */
+}
+
+/* ---------- INPUT DE MENSAGEM ---------- */
+footer input {
+  border-radius: 20px;
+}
+footer button {
+  border-radius: 50%;
+  padding: 8px 12px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 576px) {
+  .logo-suporte {
+    height: 60px;
+  }
+  .chat-box {
+    min-height: 250px;
+    max-height: 350px;
+  }
+}
+
+/* =========================================================
+   FIM - ESTILOS DA TELA DE SUPORTE ONLINE
+   ========================================================= */
+
+
+
+
+
+/* =========================================================
+   INÍCIO - ESTILOS DA TELA DE CADASTRO DE FRETE
+   ========================================================= */
+
+/* ================= CABEÇALHO ================= */
+.bg-custom {
+  background-color: #6b0d0d; /* Cor vinho */
+  height: 60px;             /* Altura fixa do cabeçalho */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Botão voltar - canto esquerdo */
+.btn-voltar {
+  color: #fff;              /* Ícone branco */
+  font-size: 1.8rem;        /* Ícone grande */
+  text-decoration: none;
+  margin-left: 5px;         /* Espaço da borda esquerda */
+}
+
+.btn-voltar:hover {
+  color: #dcdcdc;           /* Cinza claro ao passar o mouse */
+}
+
+/* Logo - canto direito */
+.logo-menu {
+  max-height: 45px;         /* Mantém a proporção da logo */
+  width: auto;
+  margin-right: 5px;        /* Espaço da borda direita */
+}
+
+/* =========================================================
+   FIM - ESTILOS DA TELA DE CADASTRO DE FRETE
+   ========================================================= */
+
+
+
+
+
+
+
+   /* =========================================================
+   INICIO - ESTILOS DA TELA DE GERENCIAR PRODUTOS
+   ========================================================= */
+   
+/* ================= CABEÇALHO ================= */
+.bg-custom {
+  background-color: #6b0d0d; /* Cor vinho */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Botão voltar */
+.btn-voltar {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.btn-voltar:hover {
+  color: #dcdcdc;
+}
+
+/* Logo */
+.logo-menu {
+  max-height: 45px;
+  width: auto;
+  margin-right: 5px;
+}
+
+/* ================= TABELA ================= */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Status personalizados */
+.status-andamento {
+  background-color: #adb5bd; /* Cinza */
+  color: #000;
+}
+
+.status-aprovado {
+  background-color: #198754; /* Verde */
+  color: #fff;
+}
+
+.status-cancelado {
+  background-color: #800000; /* Vermelho escuro */
+  color: #fff;
+}
+
+/* ================= BOTÃO ================= */
+.btn-danger {
+  background-color: #6b0d0d; /* Vinho */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #500a0a; /* Mais escuro no hover */
+}
+
+/* =========================================================
+   FIM - ESTILOS DA TELA DE GERENCIAR PRODUTOS
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+   /* =========================================================
+   INICIO- ESTILOS DA TELA INICIAL
+   ========================================================= */
+
+   /* ================= CABEÇALHO ================= */
+.bg-custom {
+  background-color: #6b0d0d; /* Cor vinho */
+}
+
+.btn-voltar {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.btn-voltar:hover {
+  color: #dcdcdc;
+}
+
+.logo-menu {
+  max-height: 45px;
+  width: auto;
+}
+
+/* ================= BARRA DE BUSCA ================= */
+header input.form-control {
+  border-radius: 20px;
+  padding-left: 35px;
+}
+
+/* ================= CARDS ================= */
+.card {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+/* ================= RODAPÉ ================= */
+footer {
+  font-size: 0.85rem;
+}
+
+footer a:hover {
+  color: #dcdcdc;
+}
+
+/* =========================================================
+   FIM- ESTILOS DA TELA INICIAL
+   ========================================================= */
