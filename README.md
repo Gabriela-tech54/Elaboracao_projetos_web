@@ -58,7 +58,7 @@ Destinado a criação de uma loja virtual para a venda de espetos
 - left : esquerda.
 - right : direita.
 - display : é utilizado para redimencionar o tamanho dos elementos (geralmente utilizamos o flex nele)
-- justify-content : define a posição do elemento. (end - fim, start - inicio, center - meio, space-between -coloca os elementos um ao lado do outro com espaços iguais separando).
+- justify-content : define a posição do elemento. (end - fim, start -inicio, center -meio, space-between -coloca os elementos um ao lado do outro com espaços iguais separando).
 - font-size : configura o tamanho da fonte do texto.
 - font-weight : configura estilo da fonte (bold -negrito, semibold -negrito mais fraco).
 - width : define a largura em px (pixels).
@@ -80,4 +80,4 @@ Destinado a criação de uma loja virtual para a venda de espetos
 - hidden: esconde/ocuta o elemento.
 - box-shadow : aplica sombras sobe o elemento.
 - text-align : alinhamento do texto.
-- 
+- outline : define configurações de linha.
