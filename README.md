@@ -81,3 +81,4 @@ Destinado a criação de uma loja virtual para a venda de espetos
 - box-shadow : aplica sombras sobe o elemento.
 - text-align : alinhamento do texto.
 - outline : define configurações de linha.
+- z-index : controla a ordem de sobreposição de elementos alinhados. Informa se o elemento vai ficar no lugar, se ele é o primeiro, se ele fica atrás, etc.
