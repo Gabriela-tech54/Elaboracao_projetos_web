@@ -93,6 +93,6 @@ Destinado a criação de uma loja virtual para a venda de espetos
 - col-1 até o 12 : define quais colunas o elemento ocupa.
 - w-100 : define que o elemento ocupa 100% da altura.
 - h-100% : define que o elemento ocupa 100% da altura.
-- bg-white : define margem para baixo.
+- bg-white : define cor de fundo branca.
 - mb-1 até 5: define margem para baixo.
 - mt-1 até 5 : define margem para o topo.
