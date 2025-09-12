@@ -82,3 +82,17 @@ Destinado a criação de uma loja virtual para a venda de espetos
 - text-align : alinhamento do texto.
 - outline : define configurações de linha.
 - z-index : controla a ordem de sobreposição de elementos alinhados. Informa se o elemento vai ficar no lugar, se ele é o primeiro, se ele fica atrás, etc.
+
+## Bootstrap
+é um frameworkque já vem com várias classes estilizadas de css, prontas para uso. Então ao invés de ficar configurando o arquivo css, você só precisa chamar o nome das classes do bootstrap dentro do html que ele já configura os elementos.
+
+### classes do bootstrap
+- container : deixa a div no centro da tela.
+- container-fluid : deixa a div se espandir junto com a tela.
+- row : faz com que os elementos dentro da div fiquem na mesma linha.
+- col-1 até o 12 : define quais colunas o elemento ocupa.
+- w-100 : define que o elemento ocupa 100% da altura.
+- h-100% : define que o elemento ocupa 100% da altura.
+- bg-white : define margem para baixo.
+- mb-1 até 5: define margem para baixo.
+- mt-1 até 5 : define margem para o topo.
