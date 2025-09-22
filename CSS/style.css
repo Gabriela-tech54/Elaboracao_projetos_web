@@ -962,3 +962,58 @@ footer a:hover {
 /* =========================================================
    FIM- ESTILOS DA TELA INICIAL
    ========================================================= */
+
+
+
+
+/*=========================================================
+ INICIO DO STATUS DA LOJA- TELA HOME
+=========================================================*/
+ /* Estilo do status público (tela inicial cliente) */
+#statusLojaPublico {
+  font-size: 0.95rem;
+}
+
+#statusLojaPublico.text-success {
+  color: #198754 !important; /* verde = aberto */
+}
+
+#statusLojaPublico.text-danger {
+  color: #dc3545 !important; /* vermelho = fechado */
+}
+
+/*=========================================================
+FIM DO STATUS DA LOJA- TELA HOME
+=========================================================*/
+
+
+
+
+
+
+
+/*=========================================================
+ INICIO DO STATUS DA LOJA- TELA HOME DO LOJISTA
+=========================================================*/
+/* Switch de status da loja */
+.switch-loja {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 1.3rem;
+}
+
+/* Verde quando a loja está aberta */
+.switch-loja:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+/* Vermelho quando a loja está fechada */
+.switch-loja:not(:checked) {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/*=========================================================
+ FIM DO STATUS DA LOJA- TELA HOME DO LOJISTA
+=========================================================*/
