@@ -99,6 +99,41 @@
         <span><i class="bi bi-cash-coin"></i> Dinheiro</span>
       </div>
     </div>
+<!-- ================= FORMULÁRIO DE ENDEREÇO ================= -->
+<section class="container my-4">
+  <h5 class="mb-3 fw-bold">Endereço de Entrega</h5>
+  <form action="../php/cadastro_de_frete_e_pagamento.php" method="post" id="formEndereco">
+    <div class="row g-3">
+
+      <!-- Bairro -->
+      <div class="col-md-4">
+        <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro" required name="bairro">
+      </div>
+
+      <!-- Valor do Frete -->
+      <div class="col-md-4">
+        <label for="valorFrete" class="form-label">Valor do Frete</label>
+        <input type="number" class="form-control" id="valorFrete" placeholder="R$ 0,00" required name="valor">
+      </div>
+
+      <!-- Transportadora -->
+      <div class="col-md-4">
+        <label for="transportadora" class="form-label">Transportadora</label>
+        <select id="transportadora" class="form-select" required>
+          <option value="">Selecione</option>
+          <option value="correios">Correios</option>
+          <option value="jadlog">Jadlog</option>
+          <option value="total-express">Total Express</option>
+          <option value="outra">Outra</option>
+        </select>
+      </div>
+
+    </div>
+  </form>
+</section>
+<!-- ================= FIM FORMULÁRIO DE ENDEREÇO ================= -->
+
 
     <!-- =================== BOTÃO FINALIZAR =================== -->
     <div class="d-grid mt-4">
@@ -110,7 +145,7 @@
 
     <!-- Botão continuar comprando -->
     <div class="mt-3">
-      <a href="produtos.html" class="btn btn-link"><i class="bi bi-arrow-left"></i> Continuar comprando</a>
+      <a href="../telainicial.html" class="btn btn-link"><i class="bi bi-arrow-left"></i> Continuar comprando</a>
     </div>
 
   </main>
