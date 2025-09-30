@@ -1,10 +1,10 @@
 <?php
 // conexao.php
 
-$host = "localhost"; // servidor do banco
-$db = "JRespetos"; // nome do banco de dados
-$user = "root"; //usuário do MySQL
-$pass = ""; //senha do MySQL (ajuste se houver)
+$host = "localhost";  // servidor do banco
+$db   = "JRespetos"; // nome do banco de dados
+$user = "root";       //usuário do MySQL
+$pass = "";           //senha do MySQL (ajuste se houver)
 
 try {
     // estabelecendo conexao

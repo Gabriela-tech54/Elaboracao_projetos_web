@@ -22,7 +22,7 @@ try{
     //  SE O METODO DE ENVIO FOR DIFERENTE DO POST
     if($_SERVER['REQUEST_METHOD'] !== "POST"){
         //VOLTAR Á TELA DE CADASTRO E EXIBIR ERRO
-        redirecWith("../paginas/fretepagamento.html",
+        redirecWith("../paginas/fretepagamentolojista.html",
         ["erro"=> "Metodo inválido"]);
     }
     // variaveis
@@ -32,9 +32,12 @@ try{
 
     //validação
     $erros_validacao=[];
-    //
+    //se qualquer campo for vazio
+    if($bairro === "" || $valor ==="" ){
+      $erros_validacao[]="Preencha todos os campos";
+    }
 
-     /* Inserir o Cliente no banco de dados */
+     /* Inserir o Frete no banco de dados */
     $sql ="INSERT INTO 
     Frete (bairro,valor,transportadora)
      Values (:bairro,:valor,:transportadora)";
@@ -50,13 +53,15 @@ try{
         redirecWith("../paginas/fretepagamento.html",
         ["cadastro" => "ok"]) ;
      }else{
-        redirecWith("../paginas/fretepagamento.html",["erro" 
-        =>"Erro ao cadastrar no banco de dados"]);
+        redirecWith("../paginas/fretepagamento.html"
+        ,["erro" =>"Erro ao cadastrar no banco 
+        de dados"]);
      }
-
-}catch(PDOException $e){
-     redirecWith("../paginas/fretepagamento.html",
-      ["erro" => "Erro no banco de dados: "
+}catch(\Exception $e){
+redirecWith("../paginas/fretepagamento.html"
+      ,["erro" => "Erro no banco de dados: "
       .$e->getMessage()]);
 }
+
+
 ?>

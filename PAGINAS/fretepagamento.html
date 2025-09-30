@@ -134,36 +134,37 @@
 <!-- ================= FORMULÁRIO DE ENDEREÇO ================= -->
 <section class="container my-4">
   <h5 class="mb-3 fw-bold">Endereço de Entrega</h5>
-  <form action="../php/cadastro_de_frete_e_pagamento.php" method="post" id="formEndereco">
+  <form id="formEnderecoCliente">
     <div class="row g-3">
+
+      <!-- Rua -->
+      <div class="col-md-6">
+        <label for="rua" class="form-label">Rua</label>
+        <input type="text" class="form-control" id="rua" placeholder="Digite sua rua" required name="rua">
+      </div>
+
+      <!-- Número -->
+      <div class="col-md-2">
+        <label for="numero" class="form-label">Número</label>
+        <input type="text" class="form-control" id="numero" placeholder="Nº" required name="numero">
+      </div>
 
       <!-- Bairro -->
       <div class="col-md-4">
-        <label for="bairro" class="form-label">Bairro</label>
-        <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro" required name="bairro">
+        <label for="bairroCliente" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairroCliente" placeholder="Digite seu bairro" required name="bairro">
       </div>
 
-      <!-- Valor do Frete -->
+      <!-- CEP -->
       <div class="col-md-4">
-        <label for="valorFrete" class="form-label">Valor do Frete</label>
-        <input type="number" class="form-control" id="valorFrete" placeholder="R$ 0,00" required name="valor">
-      </div>
-
-      <!-- Transportadora -->
-      <div class="col-md-4">
-        <label for="transportadora" class="form-label">Transportadora</label>
-        <select id="transportadora" class="form-select" required>
-          <option value="">Selecione</option>
-          <option value="correios">Correios</option>
-          <option value="jadlog">Jadlog</option>
-          <option value="total-express">Total Express</option>
-          <option value="outra">Outra</option>
-        </select>
+        <label for="cep" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP" required name="cep">
       </div>
 
     </div>
   </form>
 </section>
+
 <!-- ================= FIM FORMULÁRIO DE ENDEREÇO ================= -->
 
 
