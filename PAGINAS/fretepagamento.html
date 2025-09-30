@@ -90,15 +90,47 @@
       <input type="text" class="form-control mt-2" placeholder="Insira o cupom de desconto">
     </div>
 
-    <!-- =================== OPÇÕES DE PAGAMENTO =================== -->
-    <div class="mt-4">
-      <h6 class="fw-bold">Opções de pagamento</h6>
-      <div class="d-flex gap-3">
-        <span><i class="bi bi-credit-card"></i> Cartão</span>
-        <span><i class="bi bi-upc-scan"></i> Pix</span>
-        <span><i class="bi bi-cash-coin"></i> Dinheiro</span>
+   <!-- =================== FORMULÁRIO DE PAGAMENTO =================== -->
+<section class="mt-4">
+  <h6 class="fw-bold">Opções de pagamento</h6>
+
+  <!-- Início do formulário -->
+  <form id="formPagamento" action="../php/cadastro_forma_pagamento.php" method="post">
+    <div class="d-flex flex-column gap-2 mt-2">
+
+      <!-- Cartão -->
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pagamento" id="pagamentoCartao" value="cartao" required>
+        <label class="form-check-label" for="pagamentoCartao">
+          <i class="bi bi-credit-card"></i> Cartão
+        </label>
+      </div>
+
+      <!-- Pix -->
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pagamento" id="pagamentoPix" value="pix">
+        <label class="form-check-label" for="pagamentoPix">
+          <i class="bi bi-upc-scan"></i> Pix
+        </label>
+      </div>
+
+      <!-- Dinheiro -->
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pagamento" id="pagamentoDinheiro" value="dinheiro">
+        <label class="form-check-label" for="pagamentoDinheiro">
+          <i class="bi bi-cash-coin"></i> Dinheiro
+        </label>
       </div>
     </div>
+
+    <!-- Botão de confirmação -->
+    <div class="mt-3">
+      <button type="submit" class="btn btn-danger w-100">Confirmar Pagamento</button>
+    </div>
+  </form>
+</section>
+<!-- =================== FIM FORMULÁRIO DE PAGAMENTO =================== -->
+
 <!-- ================= FORMULÁRIO DE ENDEREÇO ================= -->
 <section class="container my-4">
   <h5 class="mb-3 fw-bold">Endereço de Entrega</h5>
